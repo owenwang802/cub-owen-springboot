@@ -1,0 +1,22 @@
+package com.owen.cubowenspringboot.cubclient;
+
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class ClientCurrency {
+
+    @JsonProperty("currency")
+    private String currency;
+
+    @JsonProperty("name_tw")
+    private String nameTw;
+
+    @JsonProperty("name_en")
+    private String nameEn;
+}
