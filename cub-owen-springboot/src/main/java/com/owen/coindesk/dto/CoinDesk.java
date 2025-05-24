@@ -1,6 +1,5 @@
 package com.owen.coindesk.dto;
 
-import com.owen.cube.dto.CurrencyCreateRequest;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

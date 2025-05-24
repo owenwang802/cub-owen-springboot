@@ -1,4 +1,4 @@
-package com.owen.cube.entity;
+package com.owen.cub.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

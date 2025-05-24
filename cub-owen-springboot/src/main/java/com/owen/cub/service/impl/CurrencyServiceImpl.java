@@ -1,19 +1,19 @@
-package com.owen.cube.service.impl;
+package com.owen.cub.service.impl;
 
 import com.owen.coindesk.CoinDeskClient;
 import com.owen.coindesk.dto.CoinDesk;
 import com.owen.coindesk.dto.CurrencyInfo;
 import com.owen.coindesk.mapper.CurrencyInfoMapper;
 import com.owen.coindesk.model.CoinDeskResponse;
-import com.owen.cube.cubclient.ClientCurrency;
-import com.owen.cube.cubclient.CubClientRequest;
-import com.owen.cube.cubclient.CubClientResponse;
-import com.owen.cube.dto.CurrencyCreateRequest;
-import com.owen.cube.dto.CurrencyUpdateRequest;
-import com.owen.cube.entity.Currency;
-import com.owen.cube.repository.CurrencyRepository;
-import com.owen.cube.rowmapper.CurrencyMapper;
-import com.owen.cube.service.CurrencyService;
+import com.owen.cub.cubclient.ClientCurrency;
+import com.owen.cub.cubclient.CubClientRequest;
+import com.owen.cub.cubclient.CubClientResponse;
+import com.owen.cub.dto.CurrencyCreateRequest;
+import com.owen.cub.dto.CurrencyUpdateRequest;
+import com.owen.cub.entity.Currency;
+import com.owen.cub.repository.CurrencyRepository;
+import com.owen.cub.rowmapper.CurrencyMapper;
+import com.owen.cub.service.CurrencyService;
 import javax.annotation.PostConstruct;
 
 import lombok.extern.slf4j.Slf4j;
@@ -143,8 +143,5 @@ public class CurrencyServiceImpl implements CurrencyService {
         return zonedUtc.withZoneSameInstant(ZoneId.of("Asia/Taipei"))
                 .format(DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss"));
     }
-    private void currencySetNameZh(CurrencyInfo currencyInfo) {
-        currencyRepository.findById(currencyInfo.getCode().toUpperCase())
-                .ifPresent(currencyRef -> currencyInfo.setNameZh(currencyRef.getNameZh()));
-    }
+
 }

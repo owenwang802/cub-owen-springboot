@@ -1,4 +1,4 @@
-package com.owen.cube.cubclient;
+package com.owen.cub.cubclient;
 
 
 import com.fasterxml.jackson.annotation.JsonProperty;

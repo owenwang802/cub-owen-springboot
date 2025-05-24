@@ -1,11 +1,11 @@
-package com.owen.cube.controller;
+package com.owen.cub.controller;
 
 
 import com.owen.coindesk.dto.CoinDesk;
-import com.owen.cube.dto.CurrencyCreateRequest;
-import com.owen.cube.dto.CurrencyUpdateRequest;
-import com.owen.cube.entity.Currency;
-import com.owen.cube.service.CurrencyService;
+import com.owen.cub.dto.CurrencyCreateRequest;
+import com.owen.cub.dto.CurrencyUpdateRequest;
+import com.owen.cub.entity.Currency;
+import com.owen.cub.service.CurrencyService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

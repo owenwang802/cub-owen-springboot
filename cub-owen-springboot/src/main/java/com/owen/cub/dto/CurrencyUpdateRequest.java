@@ -1,17 +1,17 @@
-package com.owen.cube.dto;
+package com.owen.cub.dto;
 
 import lombok.Data;
 
 import javax.validation.constraints.NotBlank;
 
-
 @Data
-public class CurrencyCreateRequest {
-    @NotBlank
-    private String code;
+public class CurrencyUpdateRequest {
+
     @NotBlank
     private String nameZh;
     @NotBlank
     private String nameEn;
+
+
 
 }

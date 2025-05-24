@@ -1,10 +1,10 @@
-package com.owen.cube.service;
+package com.owen.cub.service;
 
 
 import com.owen.coindesk.dto.CoinDesk;
-import com.owen.cube.dto.CurrencyCreateRequest;
-import com.owen.cube.dto.CurrencyUpdateRequest;
-import com.owen.cube.entity.Currency;
+import com.owen.cub.dto.CurrencyCreateRequest;
+import com.owen.cub.dto.CurrencyUpdateRequest;
+import com.owen.cub.entity.Currency;
 
 import java.util.Optional;
 

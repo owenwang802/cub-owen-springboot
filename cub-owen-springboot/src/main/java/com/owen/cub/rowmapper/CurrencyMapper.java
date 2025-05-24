@@ -1,9 +1,9 @@
-package com.owen.cube.rowmapper;
+package com.owen.cub.rowmapper;
 
-import com.owen.cube.cubclient.ClientCurrency;
-import com.owen.cube.dto.CurrencyCreateRequest;
-import com.owen.cube.dto.CurrencyUpdateRequest;
-import com.owen.cube.entity.Currency;
+import com.owen.cub.cubclient.ClientCurrency;
+import com.owen.cub.dto.CurrencyCreateRequest;
+import com.owen.cub.dto.CurrencyUpdateRequest;
+import com.owen.cub.entity.Currency;
 import org.springframework.stereotype.Component;
 
 @Component
