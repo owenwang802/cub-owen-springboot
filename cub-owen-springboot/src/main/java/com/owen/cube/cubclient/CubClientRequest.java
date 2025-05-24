@@ -1,4 +1,4 @@
-package com.owen.cubowenspringboot.cubclient;
+package com.owen.cube.cubclient;
 
 
 import org.springframework.beans.factory.annotation.Value;

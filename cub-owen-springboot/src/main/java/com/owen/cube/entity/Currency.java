@@ -1,4 +1,4 @@
-package com.owen.cubowenspringboot.entity;
+package com.owen.cube.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

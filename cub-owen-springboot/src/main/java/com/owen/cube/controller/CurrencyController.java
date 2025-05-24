@@ -1,10 +1,11 @@
-package com.owen.cubowenspringboot.controller;
+package com.owen.cube.controller;
 
 
-import com.owen.cubowenspringboot.dto.CurrencyCreateRequest;
-import com.owen.cubowenspringboot.dto.CurrencyUpdateRequest;
-import com.owen.cubowenspringboot.entity.Currency;
-import com.owen.cubowenspringboot.service.CurrencyService;
+import com.owen.coindesk.dto.CoinDesk;
+import com.owen.cube.dto.CurrencyCreateRequest;
+import com.owen.cube.dto.CurrencyUpdateRequest;
+import com.owen.cube.entity.Currency;
+import com.owen.cube.service.CurrencyService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -72,6 +73,13 @@ public class CurrencyController {
 
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 
+    }
+    // 呼叫 coindesk 的 API，並進行資料轉換，組成新 API。
+    //A. 更新時間（時間格式範例：1990/01/01 00:00:00）
+    //B. 幣別相關資訊（幣別、幣別中文名稱，以及匯率）
+    @GetMapping("/coindesk-transformed")
+    public CoinDesk getCoinDeskData() {
+        return currencyService.getCoinDeskData();
     }
 
 

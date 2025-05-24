@@ -1,9 +1,10 @@
-package com.owen.cubowenspringboot.service;
+package com.owen.cube.service;
 
 
-import com.owen.cubowenspringboot.dto.CurrencyCreateRequest;
-import com.owen.cubowenspringboot.dto.CurrencyUpdateRequest;
-import com.owen.cubowenspringboot.entity.Currency;
+import com.owen.coindesk.dto.CoinDesk;
+import com.owen.cube.dto.CurrencyCreateRequest;
+import com.owen.cube.dto.CurrencyUpdateRequest;
+import com.owen.cube.entity.Currency;
 
 import java.util.Optional;
 
@@ -19,4 +20,6 @@ public interface CurrencyService {
     void deleteCurrencyByCode(String code);
 
     Currency updateCurrency(String code, CurrencyUpdateRequest request);
+
+    CoinDesk getCoinDeskData();
 }
