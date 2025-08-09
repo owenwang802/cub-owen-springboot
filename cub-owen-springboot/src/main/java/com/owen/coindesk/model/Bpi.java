@@ -20,8 +20,5 @@ public class Bpi {
   private String description;
   @Column(precision = 19, scale = 4)
   private BigDecimal rate_float;
-
-  public String getSymbolDecoded() {
-    return symbol != null ? StringEscapeUtils.unescapeHtml4(symbol) : null;
-  }
+  
 }

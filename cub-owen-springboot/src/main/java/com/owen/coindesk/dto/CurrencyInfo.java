@@ -15,4 +15,8 @@ public class CurrencyInfo {
     private String code;
     private String nameZh;
     private String rate;
+    //Test Project
+    private String rateFloat;
+    private String description;
+    private String symbol;
 }

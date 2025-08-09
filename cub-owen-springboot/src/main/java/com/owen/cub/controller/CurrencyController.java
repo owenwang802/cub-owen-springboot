@@ -57,6 +57,7 @@ public class CurrencyController {
         }
 
         Currency updated = currencyService.updateCurrency(codeToUpperCase, currencyCreateRequest);
+
         return ResponseEntity.ok(updated);
 
     }
